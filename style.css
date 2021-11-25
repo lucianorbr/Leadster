@@ -4,9 +4,45 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+#myFooter{
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+#myFooter .container{
+    text-align: center;
+}
+
+#myFooter .footer-copyright{
+    margin-bottom: 5px;
+    text-align: center;
+    color: #777;
+    font-size: 17px;
+}
+
+#myFooter ul{
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 18px;
+}
+
+#myFooter a{
+    color: #282b2d;
+    font-size: 24px;
+    font-family: Montserrat, sans-serif;
+}
+
+#myFooter li{
+    display: inline-block;
+    margin: 0px 15px;
+    line-height: 2;
+}
+
 html{
     font-family: 'Montserrat', sans-serif;
     font-size: 100%;
+
 }
 body{
     background-color: #DBE2E9;
@@ -88,8 +124,6 @@ form ion-icon{
     transition: .3s ease box-shadow;
 }
 
-}
-
 .item:hover{
     box-shadow: 0px 0px 20px 3px #00000042;
 }
@@ -111,9 +145,10 @@ form ion-icon{
 }
 .load-more{
     display: inline-block;
+    font-family: 'Montserrat';
     margin-top:30px;
     padding: 20px 50px;
-    background-color: #4C2FF5;
+    background-color: #0C1829;
     text-decoration: none;
     text-transform: uppercase;
     color: white;
@@ -131,7 +166,7 @@ form ion-icon{
     }
     .header h1{
         font-size: 100px;
-        color: #4C2FF5;
+        color: #0C1829;
     }
     .header input{
         font-size: 24px;
@@ -143,4 +178,6 @@ form ion-icon{
     .gallery{
         grid-gap:5px;
     }
+
 }
+
