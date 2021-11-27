@@ -20,18 +20,17 @@ class PhotoGallery{
         this.loadMore.addEventListener('click', (e)=>{
             this.loadMoreImages(e);
         })
-        this.logo.addEventListener('click',()=>{
-            this.pageIndex = 1;
-            this.galleryDIv.innerHTML = '';
-            this.getImg(this.pageIndex);
-        })
+         this.logo.addEventListener('click',()=>{
+             this.pageIndex = 1;
+             this.galleryDIv.innerHTML = '';
+             this.getImg(this.pageIndex);
+         })
     }
     async getImg(index){
         this.loadMore.setAttribute('data-img', 'curated');
         const baseURL = `https://api.pexels.com/v1/curated?page=${index}&per_page=15`;
         const data = await this.fetchImages(baseURL);
         this.GenerateHTML(data.photos)
-        console.log(data)
     }
     async fetchImages(baseURL){
         const response = await fetch(baseURL, {
